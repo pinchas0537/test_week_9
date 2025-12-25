@@ -42,12 +42,12 @@ export const getSumByUsername = async (req, res) => {
     if (filterFile == []) {
         res.json({
             totalTicketsBought: countTicketsBought,
-            events: events,
+            events: 0,
             averageTicketsPerEvent: averageTicketsPerEvent
         })
     }else{res.json({
             totalTicketsBought: countTicketsBought,
-            events: events,
+            events: 0,
             averageTicketsPerEvent: averageTicketsPerEvent
         })}
 }
