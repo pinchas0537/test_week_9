@@ -27,7 +27,6 @@ export const getSumByUsername = async (req, res) => {
     const filterFile = file.filter((user) => {
         if (user.username === username) {
             countTicketsBought += user.ticketsBought
-            // const forEvents = events.filter(event => )
             events.push(user.eventName)
             const average = (countTicketsBought / events.length)
             averageTicketsPerEvent += average
